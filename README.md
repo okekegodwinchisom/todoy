@@ -7,6 +7,8 @@ Todoy is a simple web app to track and manage your to-do list tasks. It allows y
 - Task creation
 - Task completion tracking
 - Persistent storage using localStorage
+- Task deletion
+- Task editing
 
 ## Getting Started
 

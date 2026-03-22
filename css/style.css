@@ -7,6 +7,7 @@
   --border-color: #ddd;
   --completed-color: #2ecc71;
   --delete-color: #e74c3c;
+  --shadow-color: rgba(0, 0, 0, 0.1);
 }
 
 * {
@@ -45,6 +46,7 @@ h1 {
   border: 1px solid var(--border-color);
   border-radius: 4px 0 0 4px;
   font-size: 16px;
+  box-shadow: 0 2px 4px var(--shadow-color);
 }
 
 .add-task-btn {
@@ -55,11 +57,13 @@ h1 {
   border-radius: 0 4px 4px 0;
   cursor: pointer;
   font-size: 16px;
-  transition: background-color 0.3s;
+  transition: background-color 0.3s, transform 0.2s;
+  box-shadow: 0 2px 4px var(--shadow-color);
 }
 
 .add-task-btn:hover {
   background-color: var(--secondary-color);
+  transform: translateY(-2px);
 }
 
 .task-list {
@@ -74,11 +78,13 @@ h1 {
   border: 1px solid var(--border-color);
   border-radius: 4px;
   margin-bottom: 10px;
-  transition: transform 0.2s;
+  transition: transform 0.2s, box-shadow 0.3s;
+  box-shadow: 0 2px 4px var(--shadow-color);
 }
 
 .task-item:hover {
   transform: translateY(-2px);
+  box-shadow: 0 4px 8px var(--shadow-color);
 }
 
 .task-checkbox {
@@ -104,11 +110,13 @@ h1 {
   border-radius: 4px;
   cursor: pointer;
   font-size: 14px;
-  transition: background-color 0.3s;
+  transition: background-color 0.3s, transform 0.2s;
+  box-shadow: 0 2px 4px var(--shadow-color);
 }
 
 .delete-btn:hover {
   background-color: #c0392b;
+  transform: translateY(-2px);
 }
 
 @media (max-width: 600px) {
